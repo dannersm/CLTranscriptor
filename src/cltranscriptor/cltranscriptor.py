@@ -70,4 +70,4 @@ class Transcriptor:
             return [self._check_spelling(line).lower() for line
                     in self._transcribe_in_stream(audio_file, interval, offset, duration, n_frames, hop_length)]
         else:
-            return self._check_spelling(self._transcribe_at_once(audio_file, offset, duration)).lower()
+            return self._check_spelling(self._transcribe_full_file(audio_file, offset, duration)).lower()
