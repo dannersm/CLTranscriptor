@@ -6,7 +6,7 @@ Wrapper for spanish speech-to-text model based on huggingface's [Wav2Vec2ForCTC]
 To install, simply use `pip`:
 
 ```python
-!pip install cltranscriptor
+pip install cltranscriptor
 ```
 ## Usage
 To use, initialize a `Transcriptor` object:
