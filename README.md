@@ -1,6 +1,6 @@
 # CLTranscriptor
 
-Wrapper for spanish speech-to-text model based on huggingface's [Wav2Vec2ForCTC](https://huggingface.co/transformers/model_doc/wav2vec2.html) finetuned on Chilean lessons + [PySpellChecker](https://pyspellchecker.readthedocs.io/en/latest/)'s spanish spellchecking algorithm.
+Wrapper for spanish speech-to-text model based on huggingface's [Wav2Vec2ForCTC](https://huggingface.co/transformers/model_doc/wav2vec2.html) and finetuned on Chilean lessons + [PySpellChecker](https://pyspellchecker.readthedocs.io/en/latest/)'s spanish spellchecking algorithm.
 
 ## Install
 To install, simply use `pip`:
