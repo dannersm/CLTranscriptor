@@ -3,7 +3,7 @@ import numpy as np
 from librosa import load, resample, stream, get_samplerate
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 from spellchecker import SpellChecker
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 
 class Transcriptor:
@@ -23,7 +23,7 @@ class Transcriptor:
         if spell_checker:
             self.spell_checker = SpellChecker(language='es')
 
-    # transcribes a segment using a fine tuned Wav2Vec2ForCTC from huggingface transformer's framework
+    # transcribes a segment using a fine-tuned Wav2Vec2ForCTC from huggingface transformer's framework
     def _transcribe_segment(self, y, sr):
         # check for device to cast input tensor accordingly
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
