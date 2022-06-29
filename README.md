@@ -12,7 +12,7 @@ pip install cltranscriptor
 To use, initialize a `Transcriptor` object:
 
 ```python
-from cltranscriptor import Transcriptor
+from cltranscriptor.cltranscriptor import Transcriptor
 transcriptor = Transcriptor()
 ```
 By default, spell checking is set to `True` and the model name is the one available at [dannersm/wav2vec2-large-xlsr-53-chilean-lessons](https://huggingface.co/dannersm/wav2vec2-large-xlsr-53-chilean-lessons), which is based on Jonatas Grosman's [model](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-spanish) and finetuned on a 6 hour set of chilean lessons.
